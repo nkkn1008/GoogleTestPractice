@@ -8,4 +8,6 @@ GTESTOBJS = $(GTESTDIR)/libgtest_main.a $(GTESTDIR)/libgtest.a
 $(PROGRAM): $(OBJS)
 			$(CXX) -o $(PROGRAM) $(OBJS) $(GTESTOBJS)
 
+clean:
+		rm -f $(OBJS)
 
