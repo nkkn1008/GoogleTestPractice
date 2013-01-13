@@ -19,7 +19,7 @@ OBJS=\
 all:	$(OBJS) $(TARGET)
 #
 .cpp.o:
-		$(CC) $(CFLAGS) -c  $(INCD) $<
+		$(CXX) $(CFLAGS) -c  $(INCD) $<
 
 #
 $(TARGET): $(OBJS)
