@@ -9,18 +9,19 @@ TEST(firstTest, abs)
 	EXPECT_EQ(1, abs( 1 ));
 }
 
-TEST(firstTest, linklib)
-{
-	int ret = -1;
-
-	ret = hoge();
-	EXPECT_EQ(0, ret);	   
-}
-
-TEST(SmartPoiter, CallConstracta)
+TEST(SmartPoiter, Test1_CallConstract)
 {
 	CSample sample(100);
-	printf("Create() Finished");
+	std::cout << "Back from Create()" << std::endl;
 
 	EXPECT_EQ(1,1);
 }
+
+TEST(SmartPoiter, Test2_SampleFactory)
+{
+	CSampleFactory factory;   
+	std::auto_ptr<CSample> p = factory.Create(100);
+	
+	EXPECT_EQ(p->GetNum(),100);
+}
+

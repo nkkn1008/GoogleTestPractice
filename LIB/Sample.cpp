@@ -1,19 +1,21 @@
 #include <iostream>
 #include <Sample.h>
 
-int hoge()
-{
-	return 0;
-}
-
 CSample::CSample(int num)
 {
 	m_num = num;
-	printf("Called Constract");
-	//std::cout << "Constracta"@<< std::endl; 
+	std::cout << "Sample Class Constract" << std::endl;
 }
 
 CSample::~CSample()
 {
-	printf("Called Destract\n");	
+	std::cout << "Sample Class Destract" << std::endl;	
+}
+
+std::auto_ptr<CSample> CSampleFactory::Create(int num)
+{
+	std::cout << "Call CSampleFactory::Create" << std::endl;
+	std::auto_ptr<CSample>p (new CSample(num));
+
+	return p;
 }
