@@ -1,6 +1,8 @@
 #ifndef SAMPLE_H
 #define SAMPLE_H
 
+// Add Comment for GitHub
+
 class CSample
 {
 public:
