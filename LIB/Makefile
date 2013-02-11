@@ -14,6 +14,7 @@ INCD	= -I. -I$(INCD00)
 #
 OBJS=\
 	$(OBJDIR)Sample.o \
+	$(OBJDIR)Strategy.o \
 
 #
 all:	$(OBJS) $(TARGET)
