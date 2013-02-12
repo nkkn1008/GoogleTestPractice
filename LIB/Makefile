@@ -16,6 +16,7 @@ OBJS=\
 	$(OBJDIR)Sample.o \
 	$(OBJDIR)Strategy.o \
 	$(OBJDIR)AbstractFactory.o \
+	$(OBJDIR)Bridge.o \
 
 #
 all:	$(OBJS) $(TARGET)
