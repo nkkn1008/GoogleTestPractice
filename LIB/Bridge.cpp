@@ -44,9 +44,10 @@ void CustomerData::DeleteRecord(std::string custom)
 	}
 }
 
-void CustomerData::ShowRecord()
+std::string CustomerData::ShowRecord()
 {
-    std::cout << customers_.at(current_) << std::endl;
+    return customers_.at(current_);
+	//std::cout << customers_.at(current_) << std::endl;
 }
 
 void CustomerData::ShowAllRecords()

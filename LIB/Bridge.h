@@ -12,7 +12,7 @@ public:
 	virtual void PriorRecord() = 0;
 	virtual void AddRecord(std::string name) = 0;
 	virtual void DeleteRecord(std::string name) = 0;
-	virtual void ShowRecord() = 0;
+	virtual std::string ShowRecord() = 0;
 	virtual void ShowAllRecords() = 0;
 };
 
@@ -87,6 +87,6 @@ class CustomerData : public DataObject
 	virtual void PriorRecord();
 	virtual void AddRecord(std::string customer);
 	virtual void DeleteRecord(std::string custom);
-	virtual void ShowRecord();
+	virtual std::string ShowRecord();
 	virtual void ShowAllRecords();
 };
