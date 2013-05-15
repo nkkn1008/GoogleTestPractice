@@ -5,8 +5,9 @@ OBJS      =	mytest.o \
 			testmain.o \
 			Test_vector.o \
 			StrategyTest.o \
-			AbstractFactoryTest.o \
-			BridgeTest.o
+			ListTest.o \
+			AbstractFactoryTest.o 
+#			BridgeTest.o
 
 PROGRAM   = SampleTest.exe
 GTESTOBJS = $(GTESTDIR)/libgtest_main.a $(GTESTDIR)/libgtest.a
