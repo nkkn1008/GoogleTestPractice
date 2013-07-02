@@ -1,7 +1,8 @@
 CXX       = g++
-GTESTDIR  = ../gtest-1.6.0
+GTESTDIR  = ../../gtest-1.6.0
 CXXFLAGS  = -I$(GTESTDIR)/include
-OBJS      =	testmain.o
+OBJS      =	testmain.o \
+			mytest.o
 
 PROGRAM   = StudyProg.exe
 GTESTOBJS = $(GTESTDIR)/libgtest_main.a $(GTESTDIR)/libgtest.a

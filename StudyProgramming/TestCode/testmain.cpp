@@ -24,19 +24,19 @@ int getDgoubleDigitValue(int digit)
 GTEST_API_ int main(int argc, char **argv) {
 	std::cout << "Running main() from testmain.cc\n";
 
-	//	testing::InitGoogleTest(&argc, argv);
-	//	return RUN_ALL_TESTS();
+	testing::InitGoogleTest(&argc, argv);
+	return RUN_ALL_TESTS();
 
-	int digit = 0;
+	// int digit = 0;
 	
-	std::cout << "Enter a single digit number, 0-9:";
-	//std::cin >> digit;
-	digit = std::cin.get();
-	//std::cin >> digit;
+	// std::cout << "Enter a single digit number, 0-9:";
+	// //std::cin >> digit;
+	// digit = std::cin.get();
+	// //std::cin >> digit;
 
-	int sum = 0;
-	sum = digit - '0';
-	//sum = getDgoubleDigitValue(digit);
+	// int sum = 0;
+	// sum = digit - '0';
+	// //sum = getDgoubleDigitValue(digit);
 
-	std::cout << "Sum of digit in double number:" << sum << "\n";
+	// std::cout << "Sum of digit in double number:" << sum << "\n";
 }
